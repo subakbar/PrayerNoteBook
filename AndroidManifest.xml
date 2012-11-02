@@ -1,0 +1,72 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="leeheechul.make.prayernotebook"
+    android:versionCode="7"
+    android:versionName="2.2" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:name=".PrayerApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name=".AllGroupListActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".GroupListActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity 
+            android:name=".NewPrayerActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity 
+            android:name=".PrayerActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"            
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity 
+            android:name=".EditPrayerActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"            
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity 
+            android:name=".SettingActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"            
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity 
+            android:name=".PasswordActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"            
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity 
+            android:name=".SetPasswordActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"            
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_OWNER_DATA"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+</manifest>

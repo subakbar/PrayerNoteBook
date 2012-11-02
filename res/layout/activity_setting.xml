@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <!-- 상단 액션바 -->
+   <RelativeLayout 
+       android:background="#222222"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip">
+        
+       <Button 
+           android:id = "@+id/setting_activity_icon_back"
+           android:background="@drawable/actionbar_back_button"
+           android:layout_width="50dip"
+           android:layout_height="50dip"
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:onClick="backButton"
+           />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/setting_activity_icon_back"
+            android:text="@string/menu_settings"
+            android:textColor="#f2f2f2"
+            android:textSize="18sp"
+            android:layout_marginLeft="4dip"
+            />
+        
+    </RelativeLayout>
+    
+    <!-- 컨텍스트 -->
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="16dip">
+        
+        <!-- 카페 버튼 -->
+        <Button 
+           android:background="@drawable/button"
+           android:layout_width="fill_parent"
+           android:layout_height="50dip"
+           android:onClick="cafeButton"
+           android:text="@string/setting_cafe_button"
+           android:textSize="18dip"
+           />
+        
+        <!-- 비밀번호 활성화 버튼 -->
+        <Button 
+           android:id="@+id/setting_activity_use_password_button"
+           android:background="@drawable/button"
+           android:layout_width="fill_parent"
+           android:layout_height="50dip"
+           android:onClick="usePasswordButton"
+           android:textSize="18dip"
+           android:layout_marginTop="30dip"
+           />
+        
+        <!-- 비밀번호 변경 버튼 -->
+        <Button 
+           android:background="@drawable/button"
+           android:layout_width="fill_parent"
+           android:layout_height="50dip"
+           android:onClick="setPasswordButton"
+           android:text="@string/setting_set_password_button"
+           android:textSize="18dip"
+           android:layout_marginTop="10dip"
+           />
+        
+        <!-- 데이터 백업 버튼 -->
+        <Button 
+           android:background="@drawable/button"
+           android:layout_width="fill_parent"
+           android:layout_height="50dip"
+           android:onClick="backupButton"
+           android:text="@string/setting_bakup_button"
+           android:textSize="18dip"
+           android:layout_marginTop="30dip"
+           />
+        
+        <!-- 데이터 복원 버튼 -->
+        <Button 
+           android:background="@drawable/button"
+           android:layout_width="fill_parent"
+           android:layout_height="50dip"
+           android:onClick="restoreButton"
+           android:text="@string/setting_restore_button"
+           android:textSize="18dip"
+           android:layout_marginTop="10dip"
+           />
+        
+        <!-- 데이터 초기화 버튼 -->
+        <Button 
+           android:background="@drawable/button"
+           android:layout_width="fill_parent"
+           android:layout_height="50dip"
+           android:onClick="resetButton"
+           android:text="@string/setting_reset_botton"
+           android:textSize="18dip"
+           android:layout_marginTop="10dip"
+           />
+        
+    </LinearLayout>
+</LinearLayout>

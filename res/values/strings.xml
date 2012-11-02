@@ -1,0 +1,77 @@
+<resources>
+
+    <string name="app_name">Prayer Notebook</string>
+    <string name="title_activity_all_group_list">Prayer Notebook</string>
+    
+    <!-- Setting Activity -->
+    <string name="setting_cafe_button">How to us</string>
+    <string name="setting_on">On</string>
+    <string name="setting_off">Off</string>
+    <string name="setting_use_password_button">Password :</string>
+    <string name="setting_set_password_button">Set Password</string>
+    <string name="setting_bakup_button">Data Backup</string>
+    <string name="setting_restore_button">Data Restore</string>
+    <string name="setting_restore_message">Did you want to restore data?</string>
+    <string name="setting_reset_botton">Data Reset</string>
+    <string name="setting_reset_message">Did you want to reset data?</string>
+    
+    <!-- Common String -->
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">CANCEL</string>
+    
+    <!-- Context Menu -->
+    <string name = "context_select">Select</string>
+    <string name = "Context_edit">Edit</string>
+    <string name = "Context_delete">Delete</string>
+    <string name = "Context_cancel">Cancel</string>
+    
+    <!-- alert_dialog_add_group -->
+    <string name="dialog_add_group_title">Make New Group</string>
+    <string name="dialog_add_fail">Fail, It has group name</string>
+    <string name="dialog_edit_group_title">Edit Gorup Name</string>
+    <string name="dialog_add_hint">Gorup Name</string>
+    
+    <!-- Menu String -->
+    <string name="menu_settings">Setting</string>
+    <string name="menu_select_delete">Select Delete</string>
+    <string name="menu_select_move">Select Move</string>
+    <string name="menu_sort">Sort</string>
+    
+    <!-- Sub Menu String -->
+    <string name="sub_menu_sort_abc">abc</string>
+    <string name="sub_menu_sort_cba">cba</string>
+    <string name="sub_menu_sort_123">123</string>
+    <string name="sub_menu_sort_321">321</string>
+    
+    <!-- Prayer String -->
+    <string name="new_prayer_title">New Prayer</string>
+    <string name="prayer_date">Date</string>
+    <string name="prayer_target">Target</string>
+    <string name="prayer_group">Group</string>
+    <string name="prayer_title">Title</string>
+    <string name="prayer_answer">Answer</string>
+    <string name="prayer_word">Word</string>
+    
+    <!-- Password String -->
+    <string name="password_key_1">1</string>
+    <string name="password_key_2">2</string>
+    <string name="password_key_3">3</string>
+    <string name="password_key_4">4</string>
+    <string name="password_key_5">5</string>
+    <string name="password_key_6">6</string>
+    <string name="password_key_7">7</string>
+    <string name="password_key_8">8</string>
+    <string name="password_key_9">9</string>
+    <string name="password_key_0">0</string>
+    <string name="password_key_input_text">Input password</string>
+    <string name="password_key_re_input_text">No match, again</string>
+    
+    <!-- Set Password String -->
+    <string name="set_password_title">Set password</string>
+    <string name="set_password_key_input_text_step_1">Step1 : Input password</string>
+    <string name="set_password_key_re_input_text_step_1">Step1 : No match, again</string>
+    <string name="set_password_key_input_text_step_2">Step2 : Input new password</string>
+    <string name="set_password_key_input_text_step_3">Step3 : Input new password, again</string>
+    <string name="set_password_key_re_input_text_step_3">Step3 : No match, again</string>
+
+</resources>

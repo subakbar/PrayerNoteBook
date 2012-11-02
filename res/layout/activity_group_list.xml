@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <!-- 상단 액션바 -->
+   <RelativeLayout 
+       android:background="#222222"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip">
+        
+       <Button 
+           android:id="@+id/group_list_Activity_icon_back"
+           android:background="@drawable/actionbar_back_button"
+           android:layout_width="50dip"
+           android:layout_height="50dip"
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:onClick="backButton"
+           />
+        
+        <TextView 
+            android:id="@+id/group_list_activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/group_list_Activity_icon_back"
+            android:text="@string/app_name"
+            android:textColor="#f2f2f2"
+            android:textSize="18sp"
+            android:layout_marginLeft="4dip"
+            />
+        
+        <Button 
+            android:id="@+id/group_list_activity_cancel_button"
+            android:background="@drawable/actionbar_cancel_button"
+            android:layout_width="70dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="cancelButton"
+            />
+        
+        <TextView 
+            android:id="@+id/group_list_activity_title_select_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/group_list_activity_cancel_button"
+            android:text="@string/app_name"
+            android:textColor="#f2f2f2"
+            android:textSize="18sp"
+            android:layout_marginLeft="6dip"
+            />
+        
+        <Button
+            android:id="@+id/group_list_activity_ok_botton"
+            android:background="@drawable/actionbar_ok_button"
+            android:layout_width="70dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="okButton"
+            />
+        
+        <Button
+            android:id="@+id/group_list_activity_add_botton"
+            android:background="@drawable/actionbar_add_prayer_button"
+            android:layout_width="70dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="addButton"
+            />
+    </RelativeLayout>
+    
+    <!-- 리스트뷰 -->
+    <ListView
+        android:id="@+id/group_list_activity_list"
+        android:background="#f2f2f2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    </ListView>  
+</LinearLayout>

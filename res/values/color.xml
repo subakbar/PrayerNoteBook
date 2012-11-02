@@ -1,0 +1,4 @@
+    <resources>
+        <color name="list_pressed">#7fcdea</color>
+        <color name="list_release">#00000000</color>
+    </resources>

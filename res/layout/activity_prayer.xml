@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f2f2f2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 상단 액션바 -->
+    <RelativeLayout 
+        android:background="#222222"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip">
+        
+        <Button 
+           android:id="@+id/prayer_activity_icon_back"
+           android:background="@drawable/actionbar_back_button"
+           android:layout_width="50dip"
+           android:layout_height="50dip"
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:onClick="backButton"
+           />
+        
+        <TextView 
+            android:id="@+id/prayer_activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/prayer_activity_icon_back"
+            android:text="@string/new_prayer_title"
+            android:textSize="18sp"
+            android:textColor="#f2f2f2"
+            android:layout_marginLeft="4dip"
+            />
+        
+        <Button
+            android:id="@+id/prayer_activity_edit_botton"
+            android:background="@drawable/actionbar_edit_button"
+            android:layout_width="70dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="editButton"
+            />
+    </RelativeLayout>
+    
+    <!-- 컨텐츠 구성 내용 -->
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+	        android:orientation="vertical"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="16dip">
+        
+	        <!-- 대상자 -->
+	        <TextView 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:text="@string/prayer_target"
+		        android:textColor="#999999"
+		        android:textSize="16sp"
+		        
+		        android:focusable="true"
+				android:focusableInTouchMode="true"
+		        />
+		    
+		    <EditText 
+		        android:id="@+id/prayer_target"
+		        android:background="@drawable/edit_text_9"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textSize="18sp"
+		        android:textColor="#222222"
+		        android:padding="8dip"
+		        android:singleLine="true"
+		        android:clickable="false"
+		        android:enabled="false"
+		        android:inputType="none"
+		        />
+		    
+		    <!-- 날짜 -->
+	        <TextView 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="20dip"
+		        android:text="@string/prayer_date"
+		        android:textColor="#999999"
+		        android:textSize="16sp"
+		        />
+		    
+		    <Button
+		        android:id="@+id/prayer_date"
+		        android:background="@drawable/edit_text_9"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="left|center_vertical"
+		        android:text="@string/prayer_date"
+		        android:textSize="18sp"
+		        android:textColor="#222222"
+		        android:onClick="setDate"
+		        android:padding="8dip"
+		        android:clickable="false"
+		        android:enabled="false"
+		        />
+		    
+		    <!-- 그룹 -->
+	        <TextView 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="20dip"
+		        android:text="@string/prayer_group"
+		        android:textColor="#999999"
+		        android:textSize="16sp"
+		        />
+		    
+		    <Button
+		        android:id="@+id/prayer_group"
+		        android:background="@drawable/edit_text_9"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="left|center_vertical"
+		        android:textSize="18sp"
+		        android:textColor="#222222"
+		        android:onClick="setGroup"
+		        android:padding="8dip"
+		        android:clickable="false"
+		        android:enabled="false"
+		        />
+		    
+		    <!-- 기도내용 -->
+	        <TextView 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="20dip"
+		        android:text="@string/prayer_title"
+		        android:textColor="#999999"
+		        android:textSize="16sp"
+		        />
+		    
+		    <EditText 
+		        android:id="@+id/prayer_title"
+		        android:background="@drawable/edit_text_9"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textSize="18sp"
+		        android:textColor="#222222"
+		        android:padding="8dip"
+		        android:clickable="false"
+		        android:enabled="false"
+		        android:inputType="none"
+		        />
+		    
+		    <!-- 응답 -->
+	        <TextView 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="20dip"
+		        android:text="@string/prayer_answer"
+		        android:textColor="#999999"
+		        android:textSize="16sp"
+		        />
+		    
+		    <EditText 
+		        android:id="@+id/prayer_answer"
+		        android:background="@drawable/edit_text_9"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textSize="18sp"
+		        android:textColor="#222222"
+		        android:padding="8dip"
+		        android:clickable="false"
+		        android:enabled="false"
+		        android:inputType="none"
+		        />
+		    
+		    <!-- 말씀 -->
+	        <TextView 
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="20dip"
+		        android:text="@string/prayer_word"
+		        android:textColor="#999999"
+		        android:textSize="16sp"
+		        />
+		    
+		    <EditText 
+		        android:id="@+id/prayer_word"
+		        android:background="@drawable/edit_text_9"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textSize="18sp"
+		        android:textColor="#222222"
+		        android:padding="8dip"
+		        android:clickable="false"
+		        android:enabled="false"
+		        android:inputType="none"
+		        />
+	    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
