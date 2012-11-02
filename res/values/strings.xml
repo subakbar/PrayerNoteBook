@@ -46,6 +46,7 @@
     <!-- Prayer String -->
     <string name="new_prayer_title">New Prayer</string>
     <string name="prayer_date">Date</string>
+    <string name="pryaer_today">TODAY</string>
     <string name="prayer_target">Target</string>
     <string name="prayer_group">Group</string>
     <string name="prayer_title">Title</string>

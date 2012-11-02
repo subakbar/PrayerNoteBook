@@ -91,18 +91,37 @@
 		        android:textSize="16sp"
 		        />
 		    
-		    <Button
-		        android:id="@+id/new_prayer_date"
-		        android:background="@drawable/edit_text_9"
-		        android:layout_width="fill_parent"
-		        android:layout_height="wrap_content"
-		        android:gravity="left|center_vertical"
-		        android:text="@string/prayer_date"
-		        android:textSize="18sp"
-		        android:textColor="#222222"
-		        android:onClick="setDate"
-		        android:padding="8dip"
-		        />
+		    <LinearLayout
+	            android:orientation="horizontal"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content">
+    
+			    <Button
+			        android:id="@+id/new_prayer_date"
+			        android:background="@drawable/edit_text_9"
+			        android:layout_weight="7"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:gravity="left|center_vertical"
+			        android:text="@string/prayer_date"
+			        android:textSize="18sp"
+			        android:textColor="#222222"
+			        android:onClick="setDate"
+			        android:padding="8dip"
+			        />
+			    
+   			    <Button 
+			        android:background="@drawable/button"
+			        android:layout_weight="1"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/pryaer_today"
+			        android:textSize="12sp"
+			        android:textColor="#222222"
+			        android:onClick="setToday"
+			        android:layout_marginLeft="8sp"/>
+			    
+		    </LinearLayout>
 		    
 		    <!-- 그룹 -->
 	        <TextView 

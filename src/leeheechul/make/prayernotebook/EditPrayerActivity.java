@@ -1,6 +1,8 @@
 package leeheechul.make.prayernotebook;
 
 import java.text.DecimalFormat;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -254,6 +256,21 @@ public class EditPrayerActivity extends Activity implements OnDateSetListener {
 		m_isShowGroup = true;
 		
 		openContextMenu(view);
+	}
+	
+	// setButton
+	public void setToday(View view) {
+		// 현재 날짜 구하기
+        Calendar cal = new GregorianCalendar();
+        m_year = cal.get(Calendar.YEAR);
+        m_month = cal.get(Calendar.MONTH) + 1;
+        m_day = cal.get(Calendar.DAY_OF_MONTH);
+        
+        // 데이터 초기화
+        DecimalFormat df  = new DecimalFormat("00");
+        String month = df.format(m_month);
+        String day = df.format(m_day);
+        m_dateButton.setText(m_year + "/" + month + "/" + day);
 	}
 	
 	/*****

@@ -181,37 +181,38 @@ public final class R {
  Prayer String 
          */
         public static final int new_prayer_title=0x7f07001e;
-        public static final int password_key_0=0x7f07002e;
+        public static final int password_key_0=0x7f07002f;
         /**  Password String 
          */
-        public static final int password_key_1=0x7f070025;
-        public static final int password_key_2=0x7f070026;
-        public static final int password_key_3=0x7f070027;
-        public static final int password_key_4=0x7f070028;
-        public static final int password_key_5=0x7f070029;
-        public static final int password_key_6=0x7f07002a;
-        public static final int password_key_7=0x7f07002b;
-        public static final int password_key_8=0x7f07002c;
-        public static final int password_key_9=0x7f07002d;
+        public static final int password_key_1=0x7f070026;
+        public static final int password_key_2=0x7f070027;
+        public static final int password_key_3=0x7f070028;
+        public static final int password_key_4=0x7f070029;
+        public static final int password_key_5=0x7f07002a;
+        public static final int password_key_6=0x7f07002b;
+        public static final int password_key_7=0x7f07002c;
+        public static final int password_key_8=0x7f07002d;
+        public static final int password_key_9=0x7f07002e;
         /**  Password String 
          */
-        public static final int password_key_input_text=0x7f07002f;
-        public static final int password_key_re_input_text=0x7f070030;
-        public static final int prayer_answer=0x7f070023;
+        public static final int password_key_input_text=0x7f070030;
+        public static final int password_key_re_input_text=0x7f070031;
+        public static final int prayer_answer=0x7f070024;
         public static final int prayer_date=0x7f07001f;
-        public static final int prayer_group=0x7f070021;
-        public static final int prayer_target=0x7f070020;
-        public static final int prayer_title=0x7f070022;
-        public static final int prayer_word=0x7f070024;
-        public static final int set_password_key_input_text_step_1=0x7f070032;
-        public static final int set_password_key_input_text_step_2=0x7f070034;
-        public static final int set_password_key_input_text_step_3=0x7f070035;
-        public static final int set_password_key_re_input_text_step_1=0x7f070033;
-        public static final int set_password_key_re_input_text_step_3=0x7f070036;
+        public static final int prayer_group=0x7f070022;
+        public static final int prayer_target=0x7f070021;
+        public static final int prayer_title=0x7f070023;
+        public static final int prayer_word=0x7f070025;
+        public static final int pryaer_today=0x7f070020;
+        public static final int set_password_key_input_text_step_1=0x7f070033;
+        public static final int set_password_key_input_text_step_2=0x7f070035;
+        public static final int set_password_key_input_text_step_3=0x7f070036;
+        public static final int set_password_key_re_input_text_step_1=0x7f070034;
+        public static final int set_password_key_re_input_text_step_3=0x7f070037;
         /**  Set Password String 
  Set Password String 
          */
-        public static final int set_password_title=0x7f070031;
+        public static final int set_password_title=0x7f070032;
         public static final int setting_bakup_button=0x7f070007;
         /**  Setting Activity 
  Setting Activity 
